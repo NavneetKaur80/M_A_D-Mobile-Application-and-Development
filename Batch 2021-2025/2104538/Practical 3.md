@@ -1,4 +1,4 @@
-## PRACTICAL 3 TO STUDY VARIOUS XML FILES NEEDED FOR INTERFACE DESIGN
+## PRACTICAL 3. To study various XML Files needed for interface design
 #### In Android User Interface (UI) design, XML (Extensible Markup Language) files are crucial for defining the layout and appearance of the app's user interface. Here's an explanation of the various XML files you might encounter:
 
 ### 1. **Layout XML Files (`activity_main.xml`, `fragment_example.xml`)**

@@ -1,4 +1,4 @@
-## Practical 4 Android User Interface Design: To implement different type of layouts like relative, grid, linear and table.
+## Practical 4: Android User Interface Design: To implement different type of layouts like relative, grid, linear and table.
 
 A) Develop a program to implement constraint layout to display Hello World on screen.
 

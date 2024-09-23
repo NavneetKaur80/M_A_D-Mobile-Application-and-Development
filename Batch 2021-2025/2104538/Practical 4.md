@@ -27,8 +27,7 @@
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
-
-![pr4](https://github.com/user-attachments/assets/b9d7a44b-2985-4202-8549-302e043bf46b)
+![4a](https://github.com/user-attachments/assets/9b70474f-67ef-4a3c-b83e-79b481a6876a)
 
 ### B) Develop a program to implement linear layout to display send message and registration form (vertical and horizontal)
 
@@ -55,7 +54,8 @@
 </com.google.android.material.textfield.TextInputLayout>
 
 ```
-![WhatsApp Image 2024-08-30 at 12 07 45_693c4a41](https://github.com/user-attachments/assets/cee38f56-4cef-499a-a3a2-5ac15ce95b57)
+
+![4b](https://github.com/user-attachments/assets/21f5c929-a35a-41f5-941f-852237483534)
 
 
 ### C) Develop a program to implement relative layout to display Login and sign up form.

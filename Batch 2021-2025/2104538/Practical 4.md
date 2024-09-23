@@ -33,148 +33,26 @@
 ### B) Develop a program to implement linear layout to display send message and registration form (vertical and horizontal)
 
 ```xml
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/linearLayout"
+<com.google.android.material.textfield.TextInputLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    android:background="#F0F0F0"> <!-- Light background for simplicity -->
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    app:hintTextColor="@color/your_hint_color"
+    app:boxStrokeColor="@color/red"   <!-- This sets the color of the underline -->
+    app:boxStrokeErrorColor="@color/red" <!-- This sets the color of the underline when there's an error -->
 
-    <!-- Send Message Section -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Send Message"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:paddingBottom="8dp" />
-
+    <!-- Optional: Customize other styles -->
+    app:boxBackgroundMode="outline">
+    
     <EditText
-        android:id="@+id/messageInput"
+        android:id="@+id/toField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Type your message here"
-        android:padding="12dp"
-        android:background="@android:drawable/editbox_background"
-        android:layout_marginBottom="8dp" />
-
-    <Button
-        android:id="@+id/sendButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Send"
-        android:backgroundTint="#6200EE"
-        android:textColor="#FFFFFF"
-        android:padding="12dp" />
-
-    <!-- Divider Line -->
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginBottom="24dp"
-        android:background="#CCCCCC" />
-
-    <!-- Registration Form Section -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Registration Form"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        android:paddingBottom="8dp" />
-
-    <!-- Name Field (Horizontal Layout) -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="8dp">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Name"
-            android:textColor="@color/black"
-            android:padding="8dp" />
-
-        <EditText
-            android:id="@+id/nameInput"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:hint="Enter your name"
-            android:padding="12dp"
-            android:background="@android:drawable/editbox_background" />
-    </LinearLayout>
-
-    <!-- Email Field (Horizontal Layout) -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="8dp">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Email"
-            android:textColor="@color/black"
-            android:padding="8dp" />
-
-        <EditText
-            android:id="@+id/emailInput"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:hint="Enter your email"
-            android:padding="12dp"
-            android:inputType="textEmailAddress"
-            android:background="@android:drawable/editbox_background" />
-    </LinearLayout>
-
-    <!-- Phone Field (Horizontal Layout) -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginBottom="16dp">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Phone"
-            android:textColor="@color/black"
-            android:padding="8dp" />
-
-        <EditText
-            android:id="@+id/phoneInput"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="2"
-            android:hint="Enter your phone number"
-            android:padding="12dp"
-            android:inputType="phone"
-            android:background="@android:drawable/editbox_background" />
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/registerButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Register"
-        android:backgroundTint="#6200EE"
-        android:textColor="#FFFFFF"
-        android:padding="12dp" />
-
-</LinearLayout>
+        android:hint="To"
+        android:inputType="textEmailAddress"
+        android:padding="10dp" />
+    
+</com.google.android.material.textfield.TextInputLayout>
 
 ```
 ![WhatsApp Image 2024-08-30 at 12 07 45_693c4a41](https://github.com/user-attachments/assets/cee38f56-4cef-499a-a3a2-5ac15ce95b57)

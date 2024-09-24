@@ -257,9 +257,11 @@
             android:text="Continue with Google"
             android:textColor="#FFFFFF" />
     </LinearLayout>
-
 </RelativeLayout>
+
 ```
+
+![4c](https://github.com/user-attachments/assets/4086a621-ce39-4bc5-8987-a4df5a46ea46)
 
 
 

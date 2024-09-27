@@ -664,6 +664,175 @@
 
 ### F) Develop a program to implement UI from Text Palette use Linear Layout two Login windows. First is to Login with a Key use [Password(numeric)] and in second UI implement frame Layout to display Phone, Postal address, Time, Date, Number, Number(signed) , Number (decimal), AutoCompleteTextView, MultiAutoCompleteTextView, CheckedTextView, TextInputLayout.
 
+```xml
 
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- First Login Window -->
+    <LinearLayout
+        android:id="@+id/loginLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tvLoginLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Login Key"
+            android:textSize="20sp"
+            android:padding="16dp"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter numeric password"
+            android:inputType="numberPassword"
+            android:padding="16dp"/>
+
+        <!-- Password length instruction -->
+        <TextView
+            android:id="@+id/tvPasswordInstruction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password must be 6 digits."
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_red_dark"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:padding="16dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <!-- Second UI with FrameLayout -->
+    <FrameLayout
+        android:id="@+id/secondUILayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Phone Input -->
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone"
+                android:inputType="phone"/>
+
+            <!-- Postal Address Input -->
+            <EditText
+                android:id="@+id/etPostalAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Postal Address"
+                android:inputType="textPostalAddress"/>
+
+            <!-- Time Input -->
+            <EditText
+                android:id="@+id/etTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Time"
+                android:inputType="time"/>
+
+            <!-- Date Input -->
+            <EditText
+                android:id="@+id/etDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Date"
+                android:inputType="date"/>
+
+            <!-- Number Input -->
+            <EditText
+                android:id="@+id/etNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Number"
+                android:inputType="number"/>
+
+            <!-- Signed Number Input -->
+            <EditText
+                android:id="@+id/etSignedNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Number (Signed)"
+                android:inputType="numberSigned"/>
+
+            <!-- Decimal Number Input -->
+            <EditText
+                android:id="@+id/etDecimalNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Number (Decimal)"
+                android:inputType="numberDecimal"/>
+
+            <!-- AutoCompleteTextView -->
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="AutoCompleteTextView"/>
+
+            <!-- MultiAutoCompleteTextView -->
+            <MultiAutoCompleteTextView
+                android:id="@+id/multiAutoCompleteTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="MultiAutoCompleteTextView"/>
+
+            <!-- CheckedTextView -->
+            <CheckedTextView
+                android:id="@+id/checkedTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CheckedTextView"
+                android:checkMark="?android:attr/listChoiceIndicatorMultiple"/>
+
+            <!-- TextInputLayout with EditText inside -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="TextInputLayout">
+
+                <EditText
+                    android:id="@+id/textInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Text Input"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
+
+```
+
+### G) Develop a program to implement UI from Widgets Palette use Relative Layout i.e Progress Bar, SeekBar , RatingBar and Switch.
+
+```xml
+
+```
 
 

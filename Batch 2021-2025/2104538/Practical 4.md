@@ -832,6 +832,101 @@
 ### G) Develop a program to implement UI from Widgets Palette use Relative Layout i.e Progress Bar, SeekBar , RatingBar and Switch.
 
 ```xml
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FAF3E0">
+
+    <!-- Progress Bar -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="50"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:progressDrawable="@drawable/progress_bar_custom" />
+
+    <!-- SeekBar -->
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressBar"
+        android:layout_marginTop="27dp"
+        android:max="100"
+        android:progress="50"
+        android:progressTint="@color/colorPrimary"
+        android:thumbTint="@color/colorAccent" />
+
+    <!-- Dynamic Label for SeekBar Progress -->
+    <TextView
+        android:id="@+id/seekBarLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="16dp"
+        android:text="Progress: 50%"
+        android:textColor="#333"
+        android:textSize="16sp" />
+
+    <!-- RatingBar -->
+
+    <!-- Dynamic Label for RatingBar -->
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="47dp"
+        android:numStars="5"
+        android:progressTint="@color/colorRatingBar"
+        android:rating="2.5"
+        android:stepSize="0.5" />
+
+    <TextView
+        android:id="@+id/ratingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Rating: 2.5 Stars"
+        android:textColor="#333"
+        android:textSize="16sp" />
+
+    <!-- Switch with Creative Design -->
+    <RelativeLayout
+        android:id="@+id/switchLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ratingLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:padding="10dp">
+
+        <Switch
+            android:id="@+id/switchToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dark Mode"
+            android:textColor="@color/colorSwitchText"
+            android:thumbTint="@color/colorPrimary"
+            android:trackTint="@color/colorAccent" />
+    </RelativeLayout>
+
+</RelativeLayout>
 
 ```
 

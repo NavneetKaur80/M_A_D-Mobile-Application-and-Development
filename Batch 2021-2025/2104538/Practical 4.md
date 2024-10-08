@@ -828,6 +828,9 @@
 </LinearLayout>
 
 ```
+![c1](https://github.com/user-attachments/assets/7f1e3d33-81cf-4d53-956f-93b0f6fff582)
+
+![c2](https://github.com/user-attachments/assets/3fe88e2e-1133-468f-826a-8d4256f38123)
 
 ### G) Develop a program to implement UI from Widgets Palette use Relative Layout i.e Progress Bar, SeekBar , RatingBar and Switch.
 
@@ -929,5 +932,7 @@
 </RelativeLayout>
 
 ```
+
+![w](https://github.com/user-attachments/assets/1c177d88-dedd-40d2-970d-cec24ab70d44)
 
 
